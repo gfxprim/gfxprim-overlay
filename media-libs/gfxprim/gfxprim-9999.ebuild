@@ -8,7 +8,7 @@ inherit eutils
 
 if [ "${PV}" = 9999 ]; then
 	EGIT_REPO_URI="https://github.com/gfxprim/gfxprim.git"
-	inherit git-2
+	inherit git-r3
 	KEYWORDS=""
 else
 	SRC_URI="http://gfxprim.ucw.cz/releases/${P}.tar.bz2"
