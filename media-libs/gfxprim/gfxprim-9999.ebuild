@@ -20,10 +20,11 @@ HOMEPAGE="http://gfxprim.ucw.cz/"
 
 LICENSE="LGPL-2.1+"
 SLOT="0"
-IUSE="jpeg png gif tiff jpeg2k freetype fontconfig X sdl aalib python doc"
+IUSE="jpeg png webp gif tiff jpeg2k freetype fontconfig X sdl aalib python doc"
 
 RDEPEND="jpeg? ( virtual/jpeg )
 	png? ( media-libs/libpng )
+	webp? ( media-libs/libwebp )
 	gif? ( media-libs/giflib )
 	tiff? ( media-libs/tiff )
 	jpeg2k? ( >=media-libs/openjpeg-2.0.0 )
@@ -49,6 +50,7 @@ src_prepare() {
 src_configure() {
 	use !jpeg && conf="${conf} --disable=jpeg"
 	use !png && conf="${conf} --disable=libpng"
+	use !webp && conf="${conf} --disable=webp"
 	use !gif && conf="${conf} --disable=giflib"
 	use !tiff && conf="${conf} --disable=tiff"
 	use !jpeg2k && conf="${conf} --disable=openjpeg"
