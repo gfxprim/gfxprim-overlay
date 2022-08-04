@@ -1,8 +1,7 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 2020 Cyril Hrubis <metan@ucw.cz>
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=5
+EAPI=7
 
 inherit eutils
 
@@ -34,7 +33,7 @@ RDEPEND="jpeg? ( virtual/jpeg )
 	X? ( x11-libs/libX11 )
 	sdl? ( media-libs/libsdl )
 	aalib? ( media-libs/aalib )
-    doc? ( app-text/asciidoc dev-util/source-highlight media-gfx/graphviz
+	doc? ( app-text/asciidoc dev-util/source-highlight media-gfx/graphviz
 	       app-text/dvipng virtual/latex-base )
 "
 
@@ -46,6 +45,7 @@ src_prepare() {
 	if [ "${PV}" == "1.0.0_rc1" ]; then
 		epatch ${FILESDIR}/configure-more-compatible-with-autoconf.patch
 	fi
+	eapply_user
 }
 
 src_configure() {
