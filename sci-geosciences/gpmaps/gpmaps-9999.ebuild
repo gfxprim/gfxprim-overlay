@@ -14,7 +14,7 @@ fi
 DESCRIPTION="A map viewer with GPS tracking"
 HOMEPAGE="https://github.com/gfxprim"
 
-LICENSE="GPL-2.1+"
+LICENSE="GPL-2+"
 SLOT="0"
 IUSE=""
 

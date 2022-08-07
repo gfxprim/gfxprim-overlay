@@ -14,7 +14,7 @@ fi
 DESCRIPTION="A minimalistic and fast pdf viewer"
 HOMEPAGE="https://github.com/gfxprim"
 
-LICENSE="LGPL-2.1+"
+LICENSE="GPL-2+"
 SLOT="0"
 IUSE=""
 

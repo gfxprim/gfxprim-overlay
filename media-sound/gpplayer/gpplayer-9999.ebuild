@@ -14,7 +14,7 @@ fi
 DESCRIPTION="A mp3 player written using libmpg123 and gfxprim widgets"
 HOMEPAGE="https://github.com/gfxprim"
 
-LICENSE="LGPL-2.1+"
+LICENSE="GPL-2+"
 SLOT="0"
 IUSE=""
 
