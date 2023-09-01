@@ -1,7 +1,7 @@
 <repositories encoding="unicode" version="1.1">
   <repo priority="50" quality="experimental">
-    <name>gfxprim-overlay</name>
-    <description>GFXprim overlay</description>
+    <name>gfxprim</name>
+    <description>GFXprim</description>
     <homepage>https://github.com/gfxprim/gfxprim-overlay/</homepage>
     <owner>
       <email>metan@ucw.cz</email>
