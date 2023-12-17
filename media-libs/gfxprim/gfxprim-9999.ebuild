@@ -28,7 +28,7 @@ RDEPEND="jpeg? ( virtual/jpeg )
 	libarchive? ( app-arch/libarchive )
 	freetype? ( media-libs/freetype )
 	fontconfig? ( media-libs/fontconfig )
-	X? ( x11-libs/libX11 )
+	X? ( x11-libs/libX11 x11-libs/libXext x11-libs/libXrandr )
 	sdl? ( media-libs/libsdl )
 	aalib? ( media-libs/aalib )
 	doc? ( app-text/asciidoc dev-util/source-highlight media-gfx/graphviz
