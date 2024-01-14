@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>metan@ucw.cz</email>
+    <name>Cyril Hrubis</name>
+  </maintainer>
+  <longdescription>
+   App to show CPU type, load, temperature etc.
+  </longdescription>
+</pkgmetadata>
