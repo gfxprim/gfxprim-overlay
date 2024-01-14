@@ -16,7 +16,7 @@ LICENSE="GPL-2+"
 SLOT="0"
 IUSE=""
 
-DEPEND="media-libs/gfxprim"
+DEPEND="media-libs/gfxprim dev-libs/libsysinfo"
 
 src_configure() {
 true
