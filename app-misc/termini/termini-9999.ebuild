@@ -19,7 +19,7 @@ IUSE=""
 DEPEND="media-libs/gfxprim dev-libs/libvterm"
 
 src_configure() {
-true
+	./configure.sh
 }
 
 src_compile() {
