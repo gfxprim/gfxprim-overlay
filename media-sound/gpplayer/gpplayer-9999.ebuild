@@ -14,12 +14,18 @@ HOMEPAGE="https://github.com/gfxprim"
 
 LICENSE="GPL-2+"
 SLOT="0"
-IUSE=""
+IUSE="mpg123 mpv"
 
-DEPEND="media-libs/gfxprim media-sound/mpg123"
+REQUIRED_USE="|| ( mpg123 mpv )"
+
+DEPEND="
+media-libs/gfxprim
+mpg123? ( media-sound/mpg123 )
+mpv? ( media-video/mpv )
+"
 
 src_configure() {
-true
+./configure
 }
 
 src_compile() {
